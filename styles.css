@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #18191a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    border-radius: 1rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; 
+    width: 80%; 
+    max-width: 800px; 
+    
+}
+
+.chart {
+    
+    width: 100%; 
+    background: #161616;
+    padding: 7px;
+    margin-bottom: 2px;
+    border: #079ed9;
+}
+
+#totalTime {
+    
+    width: 100%; 
+    padding: 2px;
+    background-color: #18191a;
+    color: #fff;
+    text-align: center;
+}
+
+#totalTime h2 {
+    font-family: 'Titillium Web';
+    font-size: 13px;
+    margin-bottom: 1px;
+}
+
+#totalTime p {
+    font-family: 'Titillium Web';
+    font-size: 22px;
+    margin: 1px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.lighter {
+    color: #999;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+button {
+  background: transparent;
+  color: transparent; /* Set text color to transparent */
+  border: none;
+  padding: 6px 21.5px; /* Adjust padding */
+  font-family: 'Titillium Web';
+  font-size: 17px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Define standard property */
+  text-align: center;
+  background-image: linear-gradient(to right, #079ed9, #079ed9 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+button::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 3px;
+  bottom: 5px;
+  left: 0;
+  bottom: -3px;
+  z-index: 0;
+  position: absolute;
+  background: #079ed9;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-position: 0%;
+}
+
+button:hover::before {
+  width: 100%;
+}
+#analysis a {
+    text-decoration: none;
+}

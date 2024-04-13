@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+<a href=""></a>
+    <title>Chart</title>
+</head>
+<body>
+    <div class="page-container"></div>
+    <div class="container">
+        <div id="analysis" class="tabcontent">
+            <a href="barchart.html">
+                <button>Home</button>
+              </a>
+              <a href="donutchart.html">
+                <button>Categories</button>
+              </a>
+              <a href="alarm.html">
+                <button>Alarm</button>
+              </a>
+            <!-- Content for analysis tab -->
+            <div class="chart">
+                <canvas id="DonutChart" width="300" height="250"></canvas>
+            </div>
+            
+            <div id="totalTime" class="total-time">
+                <!-- Total time display -->
+                <p><span id="totalTimeDisplay"></span></p>
+            </div>           
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script src="chart.js"></script>
+    <script src="tab.js"></script>
+</body>
+</html> 
